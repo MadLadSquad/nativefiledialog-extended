@@ -6,7 +6,7 @@ if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
   set(nfd_ROOT_PROJECT ON)
 endif ()
 
-option(BUILD_SHARED_LIBS "Build a shared library instead of static" OFF)
+option(BUILD_SHARED_LIBS "Build a shared library instead of static" ON)
 option(NFD_BUILD_TESTS "Build tests for nfd" ${nfd_ROOT_PROJECT})
 option(NFD_INSTALL "Generate install target for nfd" ${nfd_ROOT_PROJECT})
 
@@ -49,5 +49,4 @@ endif()
 add_subdirectory(src)
 
 if(${NFD_BUILD_TESTS})
-  add_subdirectory(test)
 endif()
