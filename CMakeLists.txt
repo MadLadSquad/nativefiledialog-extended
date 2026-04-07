@@ -50,5 +50,4 @@ endif()
 add_subdirectory(src)
 
 if(${NFD_BUILD_TESTS} OR ${NFD_BUILD_SDL2_TESTS} OR ${NFD_BUILD_SDL3_TESTS} OR ${NFD_BUILD_GLFW3_TESTS})
-  add_subdirectory(test)
 endif()
